@@ -1,0 +1,286 @@
+/************************popcard******************************/
+.close{
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: white;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  float: right; 
+  margin-bottom: 40px;
+ } 
+
+ 
+
+/* .Model-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.Model {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2a3447; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.Model-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.Model input[type="text"],
+.Model input[type="email"],
+.Model textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Model textarea {
+
+}
+
+.Model button[type="submit"] {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  display: block; 
+  margin: auto;
+}
+
+.Model button[type="submit"]:hover {
+  background-color: #2a3447; 
+}
+   */
+   .Model {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2a3447;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  /* .close {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background-color: #E4405F;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    width: 20%;
+    height: 10%;
+  }
+   */
+
+  
+  h2 {
+    margin-top: 0;
+    margin-left: 60px;
+    color: #2a3447;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 100px; 
+  }
+  
+  .Model .Button[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    display: block; 
+    margin: auto;
+  }
+  
+  /************************profile page*************************/
+  .profile {
+    height: 500px;
+    max-width: 900px;
+    background-color: #f8f9fa; 
+    padding: 40px;
+    margin: auto;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+  color: black; 
+  }
+  .profile h2{
+    margin-bottom: 40px;
+    margin: 0px;
+    margin: auto;
+  }
+  .table {
+    border-collapse: collapse;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .table th, .table td {
+   
+    border: none;
+    padding: 10px;
+    text-align: left;
+    background-color: #f8f9fa;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+  }
+  
+  .table{
+    margin-left: 350px;
+  }
+  
+  .procontainer {
+ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: -320px;
+    margin-left : 350px;
+
+  
+  }
+  .procontainer h2{
+    margin: 0;
+    margin-right: 5px;
+  }
+  .procontainer .icones{
+    font-size: 30px;
+     cursor: pointer;
+     margin-left: 30px;
+  
+    }
+
+    .circle-image {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden; 
+      margin-left: 40px;
+      color: black;
+    }
+    /* .mcontainer {
+      display: flex; 
+      align-items: center; 
+    } */
+ .porocontainer{
+  margin-right: 550px;
+  margin-top: 20px;
+ }
+ /*************************************button de l'image******************************************/
+ .porocontainer {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.porocontainer button {
+  background-color: #2a3447;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.porocontainer button:hover {
+  background-color: red;
+}
+
+.porocontainer button:focus {
+  outline: none;
+}
+
+.porocontainer input[type="file"] {
+  display: none;
+}
+
+.porocontainer svg {
+  fill: #2a3447;
+  width: 50px;
+  height: 40px;
+  margin-left: 80px;
+}
+/**********************************les social*******************************/
+.social-section {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.social-section h5 {
+  margin-right: 30px; 
+  font-size: 20px;
+}
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.social-icons-container div {
+  margin-right: 20px; /* Espacement entre les icônes */
+}
+
+.social-icons-container div:last-child {
+  margin-right: 0; /* Supprimer la marge à droite du dernier élément */
+}
+.instagram-icon {
+  color: #E4405F; /* Couleur proche de la couleur d'Instagram */
+}
+.facebook-icon{
+  color: blue;
+}

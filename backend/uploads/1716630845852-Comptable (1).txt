@@ -1,0 +1,68 @@
+import React, { useState, useEffect } from "react";
+import { useCalendlyEventListener, InlineWidget } from "react-calendly";
+import Cookies from "cookies-js";
+import { MeetData, send_email } from "../../Mobile/Mobile/APIS/apis";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+function Calendar() {
+	const [searchparams] = useSearchParams();
+	const [height, setHeight] = useState(0);
+	const navigate = useNavigate();
+	const { t } = useTranslation();
+	// var url = searchparams.get("url")
+	// var loyer_email = searchparams.get("loyer_email")
+
+	useEffect(() => {
+		function handleResize() {
+			setHeight(window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight);
+		}
+		window.addEventListener("resize", handleResize);
+		handleResize();
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
+	const [queryParams, setQueryParams] = useState({});
+
+	const searchParams = new URLSearchParams(window.location.search);
+	const token = searchParams.get("token");
+	const mobileUserId = searchParams.get("mobileUserId");
+	const loyerId = searchParams.get("loyerId");
+	const email_user = searchParams.get("email_user");
+	const loyer_email = searchParams.get("loyer_email");
+	const url = searchParams.get("url");
+
+	// console.log("FFFFFFFFFFFFFFFFFFF",token, mobileUserId, loyerId, email_user, loyer_email)
+
+	console.log(encodeURIComponent(url), "ddddddddddddddddddddddddd");
+	useCalendlyEventListener({
+		onProfilePageViewed: () => console.log("onProfilePageViewed"),
+		onDateAndTimeSelected: () => console.log("onDateAndTimeSelected"),
+		onEventTypeViewed: () => console.log("onEventTypeViewed"),
+		onEventScheduled: async e => {
+			const data = {
+				eventUri: e.data.payload.event.uri,
+				inviteUri: e.data.payload.invitee.uri,
+				finacial_id: loyerId,
+				mobileUserId: mobileUserId
+			};
+			await MeetData(data, email_user);
+			await send_email(loyer_email);
+		}
+	});
+	return (
+		<div className="App">
+			<InlineWidget
+				url={url.toString()}
+				styles={{
+					height: height
+				}}
+			/>
+		</div>
+	);
+}
+
+export default Calendar;

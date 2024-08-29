@@ -1,0 +1,121 @@
+{
+  "name": "react-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emoji-mart/react": "^1.1.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fullcalendar/core": "^5.11.3",
+    "@fullcalendar/daygrid": "^5.11.3",
+    "@fullcalendar/interaction": "^5.11.3",
+    "@fullcalendar/list": "^5.11.3",
+    "@fullcalendar/react": "^5.11.2",
+    "@fullcalendar/timegrid": "^5.11.3",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15.18",
+    "@mui/styles": "^5.15.15",
+    "@mui/x-data-grid": "^5.17.2",
+    "@nivo/bar": "^0.80.0",
+    "@nivo/core": "^0.80.0",
+    "@nivo/geo": "^0.80.0",
+    "@nivo/line": "^0.80.0",
+    "@nivo/pie": "^0.80.0",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.18.0",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "chart.js": "^3.9.1",
+    "countries-list": "^3.1.0",
+    "d3-scale": "^4.0.2",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.11",
+    "emoji-mart": "^5.6.0",
+    "emoji-picker-react": "^4.9.3",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "firebase": "^10.12.1",
+    "formik": "^2.4.5",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.12.1",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-file-viewer": "^1.2.1",
+    "react-flag-kit": "^1.1.1",
+    "react-google-charts": "^4.0.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.2.1",
+    "react-markdown": "^9.0.1",
+    "react-modal": "^3.16.1",
+    "react-monaco-editor": "^0.55.0",
+    "react-pdf": "^9.0.0",
+    "react-pro-sidebar": "^0.7.1",
+    "react-quill": "^2.0.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-spring": "^9.7.3",
+    "react-toastify": "^10.0.5",
+    "recharts": "^2.12.5",
+    "socket.io-client": "^4.7.5",
+    "styled-components": "^6.1.11",
+    "swr": "^2.2.5",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11",
+    "zustand": "^4.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build vite",
+    "test": "react-scripts test vitest jest",
+    "eject": "react-scripts eject"
+  },
+  
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+  
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.24.7",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@types/react-big-calendar": "^1.8.9",
+    "autoprefixer": "^10.4.19",
+    "axios-mock-adapter": "^1.22.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jsdom": "^24.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vitest": "^1.6.0"
+  },
+  
+    "presets": ["@babel/preset-env"]
+  
+}

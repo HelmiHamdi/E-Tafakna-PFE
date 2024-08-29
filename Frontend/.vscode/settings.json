@@ -1,0 +1,8 @@
+{
+  // Set the default formatter to Prettier and format on save
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "cSpell.words": ["Datepicker", "distancematrix"]
+}

@@ -1,0 +1,13 @@
+.popconfirm-yes-button {
+    background-color: #4caf50; /* Vert */
+    color: white;
+    border: none;
+    margin-right: 50px; /* Espace entre les boutons */
+  }
+  
+  .popconfirm-no-button {
+    background-color: #f44336; /* Rouge */
+    color: white;
+    border: none;
+    margin-right: 50px;
+  }
